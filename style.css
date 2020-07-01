@@ -1,11 +1,89 @@
+:root {
+	--bg-color: #191b1d;
+	--font-color: #ffffff;
+	--header-color: #bc1e4a;
+	--card-color: #22262c;
+}
 * {
 	margin: 0;
 	padding: 0;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+	background: var(--bg-color);
+	color: #fff;
+	font-family: Arial;
+}
+
 .header {
 	display: inline-flex;
-	flex-direction: column;
-	background-color: #d13636;
+	width: 250px;
+	height: 55px;
+	background-color: var(--header-color);
 	text-align: center;
+	align-items: center;
+	justify-content: center;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
+
+.header h5 {
+	margin-top: 5px;
+}
+
+.toggle {
+	display: inline-flex;
+	width: 40px;
+	height: 20px;
+	background: var(--header-color);
+	border-radius: 10px;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+	margin-right: 5px;
+	position: relative;
+	top: 3.5px;
+}
+
+.ball {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: var(--font-color);
+	border-radius: 50%;
+	margin-right: 4px;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	width: 1200px;
+}
+
+.card-odd, .card-even {
+	border: 2px solid red;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+ul {
+	list-style-type: none;
+}
+  
+  ul li:before {
+	background-color: var(--header-color);
+	border-radius: 50%;
+	content: "";
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	height: 8px;
+	width: 8px;
+  }
