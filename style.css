@@ -7,6 +7,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	color: var(--font-color);
 }
 
 body {
@@ -15,7 +16,6 @@ body {
 	height: 100vh;
 	align-items: center;
 	background: var(--bg-color);
-	color: #fff;
 	font-family: Arial;
 }
 
@@ -66,18 +66,17 @@ body {
 }
 
 .card-odd, .card-even {
-	border: 2px solid red;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
+	background-color: var(--card-color);
 }
 
 ul {
 	list-style-type: none;
 }
   
-  ul li:before {
+ul li:before {
 	background-color: var(--header-color);
 	border-radius: 50%;
 	content: "";
@@ -86,4 +85,13 @@ ul {
 	margin-bottom: 2px;
 	height: 8px;
 	width: 8px;
-  }
+ }
+
+.last-btn {
+	background-color: transparent;
+	width: 200px;
+	height: 45px;
+	outline: none;
+	border: 1px solid var(--header-color);
+	border-radius: 3px;
+}
