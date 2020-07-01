@@ -70,10 +70,17 @@ body {
 	flex-direction: column;
 	align-items: center;
 	background-color: var(--card-color);
+	padding: 10px;
+}
+
+.month {
+	display: inline-block;
+	font-size: 18px;
 }
 
 ul {
 	list-style-type: none;
+	margin-top: 20px;
 }
   
 ul li:before {
@@ -87,11 +94,45 @@ ul li:before {
 	width: 8px;
  }
 
-.last-btn {
+.last-btn-1 {
 	background-color: transparent;
 	width: 200px;
 	height: 45px;
 	outline: none;
 	border: 1px solid var(--header-color);
-	border-radius: 3px;
+	border-radius: 5px;
+	position: relative;
+	top: 40px;
+	margin-top: 20px;
+}
+
+.middle-btn {
+	background-color: var(--header-color);
+	width: 200px;
+	height: 45px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.middle {
+	background-color: transparent;
+	width: 250px;
+	height: 60px;
+	outline: none;
+	border: 1px solid #43474c;
+	border-radius: 5px;
+}
+
+.last-btn-2 {
+	background-color: transparent;
+	width: 200px;
+	height: 45px;
+	outline: none;
+	border: 1px solid var(--header-color);
+	border-radius: 5px;
+	position: relative;
+	top: 60px;
+	margin-top: 20px;
 }
