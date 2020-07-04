@@ -155,6 +155,10 @@ ul li {
 	left: -40px;
 }
 
+.btn {
+	cursor: pointer;
+}
+
 .card:nth-child(even) .btn:nth-child(even) {
 	background-color: var(--header-color);
 	width: 200px;
